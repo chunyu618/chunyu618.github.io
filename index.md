@@ -1,4 +1,5 @@
 ## My Page
 
-[Note](/note)
+### Note
+* [Broadcast Storm](/note/Broadcast Storm)
 
