@@ -1,11 +1,21 @@
 ## Useful MacOS commands and tools
 
-## Unlock a keychain
+### Outline
+- [Unlock a Keychain](#unlock-a-keychain)
+- [Lock a Keychain](#lock-a-keychain)
+- [Import a Certification](#import-a-certification)
+
+### Unlock a Keychain
 ```shell
 $ security unlock-keychain -p '<password>' /path/to/login.keychain    
 ```
 
-## Import a certification
+### Lock a Keychain
+```shell
+$ security lock-keychain /path/to/login.keychain    
+```
+
+### Import a Certification
 ```shell
 
 ```
