@@ -13,7 +13,7 @@ Hypervisor模擬硬體資源給 guest machine 使用，並且使得 VM 分不清
 * Type 1, also called bare metal or native
 * Type 2, also known as hosted hypervisors
 
-####Type 1
+#### Type 1
 
 是直接將Hypervisor安裝在電腦上的，也就是硬體和Hypervisor之間並沒有再隔一層OS，也可以說Hypervisor就是OS本身。
 
