@@ -12,22 +12,20 @@ To have a online collaborative markdown notes that can be accessed from internet
 - A database running as a docker container
 - A codimd server running as a docker container 
 
-###Install docker and docker-compose on NAS
+### Install docker and docker-compose on NAS
 
 To install docker on NAS, just go to package center , search for "docker" and then click install.
 
 docker-compose will also be installed, but usually its version would be too old, so we need to download a newer version mamually.
 
-```
+```shell
 sudo su 
 cd /var/packages/Docker/target/usr/bin/
 mv docker-compose docker-compose_bak
-// X.XX.X is the desired version, in my case it is 1.26.2 
+# X.XX.X is the desired version, in my case it is 1.26.2 
 curl -L https://github.com/docker/compose/releases/download/X.XX.X/docker-compose-`uname -s`-`uname -m` -o docker-compose
 chmod +x docker-compose
 ```
-
-
 
 ### Start service
 
@@ -128,7 +126,7 @@ services:
 
 # Define networks to allow best isolation
 networks:
-  # Internal network for communication with PostgreSQL/MySQL
+  # Internal network bridge for communication between PostgreSQL/MySQL and codimd
   backend:
 
 # Define named volumes so data stays in place
@@ -142,7 +140,9 @@ Save it as `docker-compose.yml` and then run `docker-compose up -d` . (-d means 
 
 And you can use it by `https://<NAS IP>:3000`
 
- 
+### Asscess codimd from outer Internet
+
+TODO
 
 ### Reference
 
