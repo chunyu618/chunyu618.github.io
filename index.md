@@ -18,10 +18,13 @@
 
 ### Note
 
-* [Broadcast Storm](/note/Broadcast Storm)
-* [Docker](/note/Docker)
-* [Download docker on ubuntu](/note/Download docker on ubuntu)
-* [Hypervisor](/note/Hypervisor)
-* [Openflow_Remark](/note/Openflow_Remark)
-* [codimd](/note/codimd)
-* [kubenetes](/note/kubenetes)
+* Tools
+    * [Docker](/note/Docker)
+    * [Download docker on ubuntu](/note/Download docker on ubuntu)
+    * [kubenetes](/note/kubenetes)
+* NAS
+    * [codimd](/note/codimd)
+* Reading
+    * [Hypervisor](/note/Hypervisor)
+    * [Openflow Remark](/note/Openflow_Remark)
+    * [Broadcast Storm](/note/Broadcast Storm)
