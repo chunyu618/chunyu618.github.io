@@ -22,6 +22,7 @@
     * [Docker](/note/tools/Docker)
     * [Download docker on ubuntu](/note/tools/Download docker on ubuntu)
     * [kubenetes](/note/tools/kubenetes)
+    * [MacOS](/note/tools/mac)
 * NAS
     * [codimd](/note/nas/codimd)
 * Reading
