@@ -19,12 +19,12 @@ To install docker on NAS, just go to package center , search for "docker" and th
 docker-compose will also be installed, but usually its version would be too old, so we need to download a newer version mamually.
 
 ```shell
-sudo su 
-cd /var/packages/Docker/target/usr/bin/
-mv docker-compose docker-compose_bak
+$ sudo su 
+$ cd /var/packages/Docker/target/usr/bin/
+$ mv docker-compose docker-compose_bak
 # X.XX.X is the desired version, in my case it is 1.26.2 
-curl -L https://github.com/docker/compose/releases/download/X.XX.X/docker-compose-`uname -s`-`uname -m` -o docker-compose
-chmod +x docker-compose
+$ curl -L https://github.com/docker/compose/releases/download/X.XX.X/docker-compose-`uname -s`-`uname -m` -o docker-compose
+$ chmod +x docker-compose
 ```
 
 ### Start service
