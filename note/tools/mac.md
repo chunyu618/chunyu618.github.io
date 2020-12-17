@@ -35,6 +35,11 @@ or run after updating and upgrading to get rid of old packages
 $ brew update && brew upgrade && brew cleanup
 ```
 
+following command will clean up cask packages, too.
+```shell
+$ brew cask cleanup
+```
+
 ### brew install v.s. brew cask install
 Homebrew-Cask is the extension of Homebrew to install GUI applications such as Google Chrome.
 
