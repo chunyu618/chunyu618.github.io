@@ -1,10 +1,13 @@
 ## Useful MacOS commands and tools
 
 ### Outline
-- [Unlock a Keychain](#unlock-a-keychain)
-- [Lock a Keychain](#lock-a-keychain)
-- [Import a Certification](#import-a-certification)
-
+- Security and Keychain
+    - [Unlock a Keychain](#unlock-a-keychain)
+    - [Lock a Keychain](#lock-a-keychain)
+    - [Import a Certification](#import-a-certification)
+- Homebrew
+    - [Clean up Old Packages Version ](clean-up-old-packages-version)
+    - [brew install v.s. brew cask install](brew-install-v.s.-brew-cask-install)
 ### Unlock a Keychain
 ```shell
 $ security unlock-keychain -p '<password>' /path/to/login.keychain    
@@ -19,3 +22,18 @@ $ security lock-keychain /path/to/login.keychain
 ```shell
 
 ```
+
+### Clean up Old Packages Version
+```shell
+$ brew cleanup
+```
+
+or run after updating and upgrading to get rid of old packages
+
+```shell
+$ brew update && brew upgrade && brew cleanup
+```
+
+### brew install v.s. brew cask install
+Homebrew-Cask is the extension of Homebrew to install GUI applications such as Google Chrome.
+
