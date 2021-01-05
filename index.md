@@ -22,6 +22,9 @@
     * [kubenetes](/note/tools/kubenetes)
     * [MacOS](/note/tools/mac)
     * [picotui](/note/tools/picotui)
+    * [Linux Command](/note/toole/LinuxCommand)
+    * [ptenv](/note/tools/pyenv)
+    * [Zsh](/note/tools/zsh)
 * NAS
     * [codimd](/note/nas/codimd)
 * Reading
