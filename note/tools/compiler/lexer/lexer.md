@@ -95,36 +95,36 @@ int yywrap(){
 
 - yyin
 
-Input file for scanner, `stdin` if not specified.
+    Input file for scanner, `stdin` if not specified.
 
 - yyout
 
-Output file for scanner, `stdout` if not specified.
+    Output file for scanner, `stdout` if not specified.
 
 - yytext
 
-matching token. It will change every time when scanner matchs next token.
+    matching token. It will change every time when scanner matchs next token.
 
 - yyleng
 
-length of the matched token.
+    length of the matched token.
 
 - yylineno
 
-line number.
+    line number.
 
 ### Some Useful Lex Functions
 - yylex()
     
-Try to match next token, and store the result in `yytext`
+    Try to match next token, and store the result in `yytext`
 
 - yywrap()
 
-It will be called when scanner reaches EOF. If the return value of yywrap() is 1, scanner will stop. It can be used to parse multiple files and return 1 when reaching EOF of last file.
+    It will be called when scanner reaches EOF. If the return value of yywrap() is 1, scanner will stop. It can be used to parse multiple files and return 1 when reaching EOF of last file.
 
 - yyless(int n)
 
-Send yytext[n:-1] back to file.
+    Send yytext[n:-1] back to file.
 
 ### Compiler and Execute
 
@@ -138,3 +138,7 @@ gcc lex.yy.c -o lexer
 ### Source Code
 
 [lexel.l](https://github.com/chunyu618/chunyu618.github.io/blob/main/note/tools/compiler/lexer/lexer.l)
+
+### Reference
+
+[編譯原理-如何使用flex和yacc工具構造一個高級計算器](https://www.itread01.com/content/1496987892.html)
