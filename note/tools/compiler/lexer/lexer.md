@@ -96,4 +96,4 @@ gcc lex.yy.c -o lexer
 ```
 
 ### Source Code
-[lexel.l](lexel.l)
+[lexel.l](https://github.com/chunyu618/chunyu618.github.io/blob/main/note/tools/compiler/lexer/lexer.l)
