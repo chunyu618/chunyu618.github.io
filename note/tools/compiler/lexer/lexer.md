@@ -15,6 +15,7 @@
 ## Lexer --using flex to build a scanner
 
 ### Format
+
 ```c
 declarations
 %%
@@ -24,6 +25,7 @@ auxiliary procedures
 ```
 
 #### declaration
+
 ```c
 %{
 /* include libraries */
@@ -58,6 +60,7 @@ error .
 ```
 
 #### translation rules
+
 ```c
 %%
 /* action when matching a token */
@@ -69,6 +72,7 @@ error .
 ```
 
 #### auxiliary procedures
+
 ```c
 int main(int argc, char **argv){
     argc--; 
@@ -89,16 +93,24 @@ int yywrap(){
 
 ### Some Useful Lex Variables
 
-- yyin - Input file for scanner, `stdin` if not specified.
-- yyout - Output file for scanner, `stdout` if not specified.
-- yytext - matching token. It will change every time when scanner matchs next token.
-- yyleng - length of the matched token.
-- yylineno - line number.
+- yyin
+    Input file for scanner, `stdin` if not specified.
+- yyout
+    Output file for scanner, `stdout` if not specified.
+- yytext
+    matching token. It will change every time when scanner matchs next token.
+- yyleng
+    length of the matched token.
+- yylineno
+    line number.
 
 ### Some Useful Lex Functions
-- yylex() - Tyr to match next token, and store the result in `yytext`
-- yywrap() - It will be called when scanner reaches EOF. If the return value of yywrap() is 1, scanner will stop. It can be used to parse multiple files and return 1 when reaching EOF of last file.
-- yyless(int n) - Send yytext[n:-1] back to file.
+- yylex()
+    Try to match next token, and store the result in `yytext`
+- yywrap()
+    It will be called when scanner reaches EOF. If the return value of yywrap() is 1, scanner will stop. It can be used to parse multiple files and return 1 when reaching EOF of last file.
+- yyless(int n)
+    Send yytext[n:-1] back to file.
 
 ### Compiler and Execute
 
@@ -110,4 +122,5 @@ gcc lex.yy.c -o lexer
 ```
 
 ### Source Code
+
 [lexel.l](https://github.com/chunyu618/chunyu618.github.io/blob/main/note/tools/compiler/lexer/lexer.l)
