@@ -36,8 +36,6 @@ int main(int argc, char **argv){
         yyin = stdin;
     while(yylex() > 0){
         printf("word count %d is %s\n", wordCount, yytext);
-        yyless(0);
-        //printf("\n");
     }
 }
 

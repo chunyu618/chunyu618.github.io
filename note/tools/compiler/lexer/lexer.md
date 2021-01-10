@@ -1,4 +1,4 @@
-## Lexer --using flex to build a lexer
+## Lexer --using flex to build a scanner
 
 ### Format
 ```c
@@ -75,23 +75,25 @@ int yywrap(){
 
 ### Some Useful Lex Variables
 
-- yyin - Input file for lexer, `stdin` if not specified.
-- yyout - Output file for lexer, `stdout` if not specified.
-- yytext - matching token. It will change every time lexer matchs next token.
-- yyleng - length of the matched token
-- yylineno - line number
+- yyin - Input file for scanner, `stdin` if not specified.
+- yyout - Output file for scanner, `stdout` if not specified.
+- yytext - matching token. It will change every time when scanner matchs next token.
+- yyleng - length of the matched token.
+- yylineno - line number.
 
 ### Some Useful Lex Functions
 - yylex() - Tyr to match next token, and store the result in `yytext`
-- yywrap() - It will be called when lexer reach EOF. If the return value of yywrap() is 1, lexer will stop. It can be used to parse multiple files and return 1 when reaching EOF of last file.
+- yywrap() - It will be called when scanner reaches EOF. If the return value of yywrap() is 1, scanner will stop. It can be used to parse multiple files and return 1 when reaching EOF of last file.
 - yyless(int n) - Send yytext[n:-1] back to file.
 
 ### Compiler and Execute
 
-Suppose we have a lexer file `lexer.l`
+Suppose we have a scanner file `lexer.l`
 ```shell
 flex lexer.l
 gcc lex.yy.c -o lexer
 ./lexer inputFile
 ```
 
+### Source Code
+[lexel.l](lexel.l)
