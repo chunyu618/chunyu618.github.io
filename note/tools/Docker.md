@@ -45,15 +45,15 @@ $ docker network rm <Network ID>
 
 - `-i, --interactive, Keep STDIN open even if not attached`
 
-	Connect the `STDIN` of terminal to the `STDIn` of the container.
+    Connect the `STDIN` of terminal to the `STDIn` of the container.
 
 - `-t, --tty, Allocate a pseudo-TTY`
 
-	It tells the main process of the container that its input is a terminal device.
+    It tells the main process of the container that its input is a terminal device.
 
 - `-d, --detach, Run container in background and print container ID`
 
-	Just run the container in background
+    Just run the container in background
 
 	
 
