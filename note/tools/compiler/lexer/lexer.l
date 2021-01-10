@@ -6,16 +6,24 @@ int wordCount = 0;
 
 #define FALSE 1
 #define TRUE 2
+#define ERROR 100
 %}
 
 /* regular expression definition */
+WS [ \t]+
+
 true "true"
 false "false"
+
+/* because flex will find and match the token with those regex from top to bottom, we can define error token here as 'anything' */
+error .
 
 %%
 
 {false} {wordCount++; return FALSE;}
 {true} {wordCount++; return TRUE;}
+{WS} {}
+{error} {printf("[ERROR] Read undefined string %s\n", yytext); exit(1); }
 
 %%
 
