@@ -25,6 +25,7 @@
     * [Linux Command](/note/toole/LinuxCommand)
     * [ptenv](/note/tools/pyenv)
     * [Zsh](/note/tools/zsh)
+    * [compiler](/note/tools/compiler/compiler)
 * NAS
     * [codimd](/note/nas/codimd)
 * Reading
