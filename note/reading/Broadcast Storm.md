@@ -1,3 +1,17 @@
+<style>
+    body{
+    	font-size: 15pt;
+    }
+    h2{
+        font-size: 28pt;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 24pt;
+        font-weight: bold;
+    }
+</style>
+
 ## Network Broadcast Storm
 
 #### What is a Broadcast packet
