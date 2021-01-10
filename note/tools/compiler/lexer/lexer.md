@@ -26,7 +26,7 @@ auxiliary procedures
 
 #### declaration
 
-```
+```C
 %{
 /* include libraries */
 #include<stdio.h>
