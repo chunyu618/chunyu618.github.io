@@ -11,6 +11,8 @@
 - Launch Agent
     - [Setting Global Environment Variables](#setting-global-environment-variables)
     - [Checking plist Files](#checking-plist-files)
+- Fastlane
+    - [2FA Cookie](#2fa-cookie)
 
 ### Unlock a Keychain
 ```shell
@@ -95,3 +97,14 @@ $ launchctl start ~/Library/LaunchAgents/environment.plist
 $ plutil environment.plist
 ```
 
+### 2FA Cookie
+
+Location
+```shell
+~/.fastlane/spaceship/[email]/cookie
+```
+
+Environment Variable
+```shell
+export FASTLANE_SESSION='---\n- !ruby/object:HTTP::Cookie\n  name: DES5c148586dfd451e55afbaaa5f62418f91\n  value: HSARMTKNSRVTWFla1+yO4gVPowH17VaaaxPFnUdMUegQZxqy1Ie1c2v6bM1vSOzIbuOmrl/FNenlScsd/NbF7/Lw4cpnL15jsyg0TOJwP32tC/NguPiyOaaaU+jrj4tf4uKdIywVaaaFSRVT\n  domain: idmsa.apple.com\n  for_domain: true\n  path: "/"\n  secure: true\n  httponly: true\n  expires: 2016-04-27 23:55:56.000000000 Z\n  max_age: \n  created_at: 2016-03-28 16:55:57.032086000 -07:00\n  accessed_at: 2016-03-28 19:11:17.828141000 -07:00\n'
+```
