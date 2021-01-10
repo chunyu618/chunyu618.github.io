@@ -26,7 +26,7 @@ auxiliary procedures
 
 #### declaration
 
-```C
+```c
 %{
 /* include libraries */
 #include<stdio.h>
@@ -93,36 +93,36 @@ int yywrap(){
 
 ### Some Useful Lex Variables
 
-- yyin
+- `yyin`
 
     Input file for scanner, `stdin` if not specified.
 
-- yyout
+- `yyout`
 
     Output file for scanner, `stdout` if not specified.
 
-- yytext
+- `yytext`
 
     matching token. It will change every time when scanner matchs next token.
 
-- yyleng
+- `yyleng`
 
     length of the matched token.
 
-- yylineno
+- `yylineno`
 
     line number.
 
 ### Some Useful Lex Functions
-- yylex()
+- `yylex()`
     
     Try to match next token, and store the result in `yytext`
 
-- yywrap()
+- `yywrap()`
 
     It will be called when scanner reaches EOF. If the return value of yywrap() is 1, scanner will stop. It can be used to parse multiple files and return 1 when reaching EOF of last file.
 
-- yyless(int n)
+- `yyless(int n)`
 
     Send yytext[n:-1] back to file.
 
