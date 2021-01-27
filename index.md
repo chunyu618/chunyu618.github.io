@@ -33,3 +33,6 @@
     * [Openflow Remark](/note/reading/Openflow_Remark)
     * [Broadcast Storm](/note/reading/Broadcast Storm)
     * [Semantic Versioning](/note/reading/SemanticVersioning)
+
+* temp
+    * [yubikey](https://www.yubico.com/why-yubico/for-individuals/)
