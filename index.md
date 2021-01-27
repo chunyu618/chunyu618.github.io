@@ -36,3 +36,5 @@
 
 * temp
     * [yubikey](https://www.yubico.com/why-yubico/for-individuals/)
+    * [透過 Docker Compose 設定 network](https://titangene.github.io/article/networking-in-docker-compose.html)
+    * [學習指南：React 介紹](https://zh-hant.reactjs.org/tutorial/tutorial.html)
