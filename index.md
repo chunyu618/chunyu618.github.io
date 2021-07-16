@@ -17,6 +17,7 @@
 ### Note
 
 * Tools and Commands
+    * [Git](/note/tools/git)
     * [Docker](/note/tools/Docker)
     * [Download docker on ubuntu](/note/tools/Download docker on ubuntu)
     * [kubenetes](/note/tools/kubenetes)
