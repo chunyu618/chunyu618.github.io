@@ -43,3 +43,4 @@ https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 ### Reference 
 https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f
+[Ubuntu終端美化:oh-my-zsh+Powerlevel9k](https://www.twblogs.net/a/5d400bc1bd9eee517422dfc7)
