@@ -27,6 +27,7 @@
     * [ptenv](/note/tools/pyenv)
     * [Zsh](/note/tools/zsh)
     * [compiler](/note/tools/compiler/compiler)
+    * [Shared Library](/note/tools/shared_library)
 * NAS
     * [codimd](/note/nas/codimd)
 * Reading
